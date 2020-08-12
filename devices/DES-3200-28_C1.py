@@ -259,7 +259,7 @@ walk_ifAlias = {
 
 walk_lldp = {
     #    lldpNeibor           .1.0.8802.1.1.2.1.4.1			lldpRemTable
-    'lldpNeibor': '.1.0.8802.1.1.2.1.4.1',
+    'hex_string:lldpNeibor': '.1.0.8802.1.1.2.1.4.1',
 }
 
 walk_FDB_VLAN = {

@@ -209,7 +209,7 @@ walk_ifAlias = {
 
 walk_lldp = {
 #    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
-    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    'hex_string:ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
     }
 
 walk_ifName = {

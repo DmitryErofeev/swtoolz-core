@@ -43,6 +43,7 @@ Commands = ([
                 #    'get_ifName',
                 #    'walk_ifAlias',
                 'walk_lldp',
+                'walk_vlan',
             ],)
 
 # swL2PortInfoMediumType
@@ -262,6 +263,11 @@ walk_lldp = {
     'hex_string:lldpNeibor': '.1.0.8802.1.1.2.1.4.1',
 }
 
+walk_vlan = {
+    'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3',
+
+}
+
 walk_FDB_VLAN = {
     #    FDB                 .1.3.6.1.2.1.17.7.1.2.2.1.2			dot1qTpFdbPort
     'FDB': '.1.3.6.1.2.1.17.7.1.2.2.1.2.%s',
@@ -410,3 +416,4 @@ set_CfgUpload = [
     #     .1.3.6.1.4.1.171.12.1.2.18.1.1.12					agentBscFileSystemCtrl
     ['.1.3.6.1.4.1.171.12.1.2.18.1.1.12', '3', '3', 'INTEGER'],
 ]
+

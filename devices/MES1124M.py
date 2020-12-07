@@ -35,7 +35,8 @@ Commands = ([
     'BoardDescr',
     'get_PortIndex',
     'PortName',
-    'walk_lldp'
+    'walk_lldp',
+    'walk_syslog'
     ],)
 
 # ifType
@@ -205,6 +206,11 @@ walk_AllPorts = {
 walk_ifAlias = {
 #    PortDescr           .1.3.6.1.2.1.31.1.1.1.18			ifAlias
     'PortDescr'       : '.1.3.6.1.2.1.31.1.1.1.18',
+    }
+
+walk_syslog = {
+#    snmpSyslogCollectorEntry           .1.3.6.1.4.1.89.82.1.2.4.1			walk_syslog
+    'hex_string:snmpSyslogCollectorEntry'       : '.1.3.6.1.4.1.89.82.1.2.4.1',
     }
 
 walk_lldp = {

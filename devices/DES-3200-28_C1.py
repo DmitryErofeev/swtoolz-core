@@ -42,6 +42,7 @@ Commands = ([
                 'get_HardwareRev',
                 #    'get_ifName',
                 #    'walk_ifAlias',
+                'walk_lldp',
             ],)
 
 # swL2PortInfoMediumType
@@ -254,6 +255,11 @@ walk_AllPorts = {
 walk_ifAlias = {
     #    PortDescr           .1.3.6.1.2.1.31.1.1.1.18			ifAlias
     'PortDescr': '.1.3.6.1.2.1.31.1.1.1.18',
+}
+
+walk_lldp = {
+    #    lldpNeibor           .1.0.8802.1.1.2.1.4.1			lldpRemTable
+    'lldpNeibor': '.1.0.8802.1.1.2.1.4.1',
 }
 
 walk_FDB_VLAN = {

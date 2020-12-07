@@ -40,6 +40,7 @@ Commands = ([
                 'cdPairStatus',
                 'get_PortIndex',
                 'get_HardwareRev',
+                'walk_syslog',
             ],)
 
 # sysPortCtrlMediumType .1.3.6.1.4.1.171.10.76.28.1.1.13.1.2
@@ -166,6 +167,14 @@ get_HardwareRev = {
 walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.10.76.28.1.1.13.1.1  sysPortCtrlIndex
     'PortIndex': '.1.3.6.1.4.1.171.10.76.28.1.1.13.1.1',
+}
+
+walk_syslog = {
+    'syslog_state': '1.3.6.1.4.1.171.12.12.1.0', # 3 - enabled
+    'SysLogServerIPAddress': '.1.3.6.1.4.1.171.12.12.2.1.2',
+    'SysLogServerSeverity': '.1.3.6.1.4.1.171.12.12.2.1.4',
+    'SysLogServerUDPPort': '.1.3.6.1.4.1.171.12.12.2.1.5',
+
 }
 
 get_PortIndex = {

@@ -45,6 +45,7 @@ Commands = ([
                 'get_HardwareRev',
                 #    'get_ifName',
                 #    'get_ifAlias',
+                'walk_syslog',
             ],)
 
 # swL2PortInfoMediumType
@@ -135,6 +136,14 @@ get_HardwareRev = {
 walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.11.113.1.3.2.2.1.1.1		swL2PortInfoPortIndex
     'PortIndex': '.1.3.6.1.4.1.171.11.113.1.3.2.2.1.1.1',
+}
+
+walk_syslog = {
+    'syslog_state': '1.3.6.1.4.1.171.12.12.1.0', # 3 - enabled
+    'SysLogServerIPAddress': '.1.3.6.1.4.1.171.12.12.2.1.2',
+    'SysLogServerSeverity': '.1.3.6.1.4.1.171.12.12.2.1.4',
+    'SysLogServerUDPPort': '.1.3.6.1.4.1.171.12.12.2.1.5',
+
 }
 
 get_PortIndex = {

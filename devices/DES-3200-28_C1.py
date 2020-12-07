@@ -44,6 +44,7 @@ Commands = ([
                 #    'walk_ifAlias',
                 'walk_lldp',
                 'walk_vlan',
+                'walk_syslog',
             ],)
 
 # swL2PortInfoMediumType
@@ -267,6 +268,15 @@ walk_vlan = {
     'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3',
 
 }
+
+walk_syslog = {
+    'syslog_state': '1.3.6.1.4.1.171.12.12.1.0', # 3 - enabled
+    'SysLogServerIPAddress': '.1.3.6.1.4.1.171.12.12.2.1.2',
+    'SysLogServerSeverity': '.1.3.6.1.4.1.171.12.12.2.1.4',
+    'SysLogServerUDPPort': '.1.3.6.1.4.1.171.12.12.2.1.5',
+
+}
+
 
 walk_FDB_VLAN = {
     #    FDB                 .1.3.6.1.2.1.17.7.1.2.2.1.2			dot1qTpFdbPort

@@ -210,7 +210,10 @@ walk_ifAlias = {
 
 walk_syslog = {
 #    snmpSyslogCollectorEntry           .1.3.6.1.4.1.89.82.1.2.4.1			walk_syslog
-    'snmpSyslogCollectorEntry'       : '.1.3.6.1.4.1.89.82.1.2.4.1',
+    'hex_string:SyslogCollectorAddress'       : '.1.3.6.1.4.1.89.82.1.2.4.1.4',
+    'SyslogCollectorUdpPort'       : '.1.3.6.1.4.1.89.82.1.2.4.1.5',
+    'SyslogCollectorSeverity'       : '.1.3.6.1.4.1.89.82.1.2.4.1.7',
+
     }
 
 walk_lldp = {

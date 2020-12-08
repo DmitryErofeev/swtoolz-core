@@ -468,11 +468,9 @@ def hex_string(input_string):
 
 
 def hex_ip(input_string):
-    ip = int(input_string, 16)
-    import socket
-    import struct
-    packed = struct.pack("<L", ip)
-    return socket.inet_ntoa(packed)
+    _hex = hex_string(input_string)
+    return '.'.join([str(int(_hex[n:n+2], 16)) for n in range(0,len(_hex),2)])
+
 
 
 def ljust_string(input_string):

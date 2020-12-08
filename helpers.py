@@ -467,6 +467,14 @@ def hex_string(input_string):
     return ''.join([f'{ord(c):02X}' for c in input_string])
 
 
+def hex_ip(input_string):
+    ip = hex_string(input_string)
+    import socket
+    import struct
+    packed = struct.pack("<L", ip)
+    return socket.inet_ntoa(packed)
+
+
 def ljust_string(input_string):
     """
     Добавляет нулей к входной строке до 16 символов. Используется в основоном для масок портов.

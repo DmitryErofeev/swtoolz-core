@@ -271,7 +271,7 @@ walk_vlan = {
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.2.1.6', # 3 - enabled
-    'SysLogServerIPAddress': '1.3.6.1.4.1.171.12.12.2.1.9',
+    'hex_ip:SysLogServerIPAddress': '1.3.6.1.4.1.171.12.12.2.1.9',
     'SysLogServerSeverity': '1.3.6.1.4.1.171.12.12.2.1.4',
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
 

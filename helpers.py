@@ -468,7 +468,7 @@ def hex_string(input_string):
 
 
 def hex_ip(input_string):
-    ip = hex_string(input_string)
+    ip = int(input_string, 16)
     import socket
     import struct
     packed = struct.pack("<L", ip)

@@ -102,7 +102,7 @@ PortType = ({
 
 # UnitModuleName (placeholder)
 BoardDescr = ({
-    '1' : 'DES-3200-10',
+    '1' : 'DES-3010G',
     },)
 
 # swEtherCableDiagLinkStatus
@@ -136,10 +136,10 @@ walk_PortIndex = {
     }
 
 walk_syslog = {
-    'syslog_state': '1.3.6.1.4.1.171.12.12.1.0', # 3 - enabled
-    'SysLogServerIPAddress': '.1.3.6.1.4.1.171.12.12.2.1.2',
-    'SysLogServerSeverity': '.1.3.6.1.4.1.171.12.12.2.1.4',
-    'SysLogServerUDPPort': '.1.3.6.1.4.1.171.12.12.2.1.5',
+    'syslog_state': '1.3.6.1.4.1.171.12.12.2', # 3 - enabled
+    'SysLogServerIPAddress': '1.3.6.1.4.1.171.12.12.2.1.2',
+    'SysLogServerSeverity': '1.3.6.1.4.1.171.12.12.2.1.4',
+    'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
 
 }
 

@@ -88,7 +88,7 @@ PortType = ({
 
 # UnitModuleName (placeholder)
 BoardDescr = ({
-                  '1': 'DES-1228/ME',
+                  '1': 'DES-1210-28/ME/B2',
               },)
 
 # swEtherCableDiagLinkStatus

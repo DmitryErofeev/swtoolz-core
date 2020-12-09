@@ -124,7 +124,7 @@ walk_PortIndex = {
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.10.75.15.2.16.1.1', # 1 - enabled
     'SysLogServerIPAddress': '1.3.6.1.4.1.171.10.75.15.2.16.2.1.1.2',
-    'SysLogServerSeverity': '1.3.6.1.4.1.171.10.75.15.2.16.2.1.1.3',
+    'SysLogServerSeverity': '1.3.6.1.4.1.171.10.75.15.2.16.2.1.1.3', # 6 - information
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.10.75.15.2.16.2.1.1.5',
 
 }

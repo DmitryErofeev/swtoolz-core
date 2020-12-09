@@ -3,4 +3,5 @@ venv/
 tests/
 *.pyc
 swtoolz-core.log
-swconfig.py
+swconfig_local.py
+docker-compose.override.yml

@@ -4,7 +4,7 @@
 
 models_by_desc = [
     {'DES-3010G': 'DES-3010G'},
-    {'DES-1228/ME': 'DES-1228ME'},
+    {'DES-1228ME': 'DES-1228ME'},
     {'DES-1210-28/ME/B2': 'DES-1210-28ME_B2'},
     {'DES-1210-10/ME/B1': 'DES-1210-10ME_B1'},
     {'DES-3200-28/C1': 'DES-3200-28_C1'},

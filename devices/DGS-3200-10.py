@@ -39,6 +39,7 @@ Commands = ([
                 'cdPairStatus',
                 'get_PortIndex',
                 'get_HardwareRev',
+                'walk_syslog',
             ],)
 
 # swL2PortInfoMediumType
@@ -219,6 +220,14 @@ walk_AllPorts = {
 walk_ifAlias = {
     # PortDescr   .1.3.6.1.2.1.31.1.1.1.18			ifAlias
     'PortDescr': '.1.3.6.1.2.1.31.1.1.1.18',
+}
+
+walk_syslog = {
+    'syslog_state': '1.3.6.1.4.1.171.12.12.1', # 3 - enabled
+    'hex_ip:SysLogServerIPAddress': '1.3.6.1.4.1.171.12.12.2.1.9',
+    'SysLogServerSeverity': '1.3.6.1.4.1.171.12.12.2.1.4',
+    'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
+
 }
 
 walk_FDB_VLAN = {

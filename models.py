@@ -57,7 +57,7 @@ models_by_desc = [
     {'Redback': 'Redback'},
     {'MES2124F': 'MES-2124'},
     {'MES1124M' : 'MES1124M'},
-    {'MES2324FB': 'MES-2324FB'},
+    {'MES2324': 'MES-2324FB'},
     {'MES3124F': 'MES-3124F'},
     {'MES3324F': 'MES3324F'},
     {'MES5324': 'MES-5324'},

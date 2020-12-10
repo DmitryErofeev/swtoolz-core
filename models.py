@@ -55,7 +55,7 @@ models_by_desc = [
     {'ATS10-5A.2_RoS': 'WS-C3750G-16TD'},
     {'SCE8000': 'SCE8000'},
     {'Redback': 'Redback'},
-    {'MES2124': 'MES-2124'},
+    {'MES2124F': 'MES-2124'},
     {'MES1124M' : 'MES1124M'},
     {'MES2324FB': 'MES-2324FB'},
     {'MES3124F': 'MES-3124F'},

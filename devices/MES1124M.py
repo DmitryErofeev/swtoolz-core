@@ -36,7 +36,8 @@ Commands = ([
     'get_PortIndex',
     'PortName',
     'walk_lldp',
-    'walk_syslog'
+    'walk_syslog',
+    'walk_vlan',
     ],)
 
 # ifType
@@ -207,6 +208,11 @@ walk_ifAlias = {
 #    PortDescr           .1.3.6.1.2.1.31.1.1.1.18			ifAlias
     'PortDescr'       : '.1.3.6.1.2.1.31.1.1.1.18',
     }
+
+walk_vlan = {
+    'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3',
+
+}
 
 walk_syslog = {
     'rlSyslogGlobalEnable'          : '1.3.6.1.4.1.89.82.2.1',

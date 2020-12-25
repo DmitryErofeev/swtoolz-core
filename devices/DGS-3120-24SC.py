@@ -62,6 +62,7 @@ Commands = ([
     'get_HardwareRev',
     'walk_ifAlias',
     'walk_syslog',
+    'walk_vlan',
     ],)
 
 # swL2PortInfoMediumType
@@ -179,6 +180,12 @@ walk_syslog = {
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
 
 }
+
+walk_vlan = {
+    # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица
+    'VlanList' : '1.3.6.1.2.1.17.7.1.4.3.1.4', # антагед порты в виланах
+}
+
 
 walk_PortIndex = {
 #    PortIndex           .1.3.6.1.4.1.171.11.117.1.3.2.3.1.1.1		swL2PortInfoPortIndex

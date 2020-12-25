@@ -43,6 +43,7 @@ Commands = ([
 #    'get_ifName',
 #    'get_ifAlias',
     'walk_syslog',
+    'walk_vlan',
     ],)
 
 # swL2PortInfoMediumType
@@ -140,6 +141,11 @@ walk_syslog = {
     'SysLogServerIPAddress': '1.3.6.1.4.1.171.10.75.14.1.16.2.1.1.2',
     'SysLogServerSeverity': '1.3.6.1.4.1.171.10.75.14.1.16.2.1.1.3', # 6 - information
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.10.75.14.1.16.2.1.1.5',
+}
+
+walk_vlan = {
+    # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица
+    'VlanList' : '1.3.6.1.2.1.17.7.1.4.3.1.4', # антагед порты в виланах
 }
 
 get_PortIndex = {

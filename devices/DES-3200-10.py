@@ -43,6 +43,8 @@ Commands = ([
 #    'get_ifName',
 #    'get_ifAlias',
     'walk_syslog',
+    'walk_vlan',
+
     ],)
 
 # swL2PortInfoMediumType
@@ -134,6 +136,13 @@ walk_PortIndex = {
 #    PortIndex           .1.3.6.1.4.1.171.11.113.1.1.2.2.1.1.1		swL2PortInfoPortIndex
     'PortIndex'       : '.1.3.6.1.4.1.171.11.113.1.1.2.2.1.1.1',
     }
+
+walk_vlan = {
+    # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица
+    'VlanList' : '1.3.6.1.2.1.17.7.1.4.3.1.4', # антагед порты в виланах
+
+
+}
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.1', # 3 - enabled

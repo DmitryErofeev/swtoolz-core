@@ -42,6 +42,7 @@ Commands = ([
                 'cdPairStatus',
                 'get_PortIndex',
                 'walk_syslog',
+                'walk_vlan',
             ],)
 
 # swL2PortInfoMediumType
@@ -143,6 +144,11 @@ walk_syslog = {
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
 
 
+}
+
+walk_vlan = {
+    # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица
+    'VlanList' : '1.3.6.1.2.1.17.7.1.4.3.1.4', # антагед порты в виланах
 }
 
 get_PortIndex = {

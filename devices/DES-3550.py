@@ -42,6 +42,7 @@ Commands = ([
                 'get_PortIndex',
                 'walk_syslog',
                 'walk_vlan',
+                'get_deviceMac',
             ],)
 
 # ifType
@@ -139,6 +140,12 @@ walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.11.64.2.2.4.1.1.1		swL2PortInfoPortIndex
     'PortIndex': '.1.3.6.1.4.1.171.11.64.2.2.4.1.1.1',
 }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.1', # 3 - enabled

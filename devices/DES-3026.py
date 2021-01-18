@@ -41,6 +41,7 @@ Commands = ([
     'get_PortIndex',
 #    'get_ifName',
 #    'get_ifAlias',
+    'get_deviceMac',
     ],)
 
 # ifType
@@ -142,6 +143,12 @@ walk_PortIndex = {
 #    PortIndex           .1.3.6.1.4.1.171.11.63.3.2.2.1.1.1		swL2PortInfoPortIndex
     'PortIndex'       : '.1.3.6.1.4.1.171.11.63.3.2.2.1.1.1',
     }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 get_PortIndex = {
 #    PortIndex           .1.3.6.1.4.1.171.11.63.3.2.2.1.1.1		swL2PortInfoPortIndex

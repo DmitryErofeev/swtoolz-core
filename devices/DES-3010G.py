@@ -44,6 +44,7 @@ Commands = ([
 #    'get_ifAlias',
     'walk_syslog',
     'walk_vlan',
+    'get_deviceMac',
     ],)
 
 # swL2PortInfoMediumType
@@ -143,6 +144,12 @@ walk_syslog = {
     'SysLogServerUDPPort': '1.3.6.1.4.1.171.12.12.2.1.5',
 
 }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 walk_vlan = {
     # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица

@@ -44,6 +44,7 @@ Commands = ([
 #    'get_ifAlias',
     'walk_syslog',
     'walk_vlan',
+    'get_deviceMac',
     ],)
 
 # swL2PortInfoMediumType
@@ -130,6 +131,12 @@ get_HardwareRev = {
 #    HardwareRev         .1.3.6.1.2.1.16.19.3.0				probeHardwareRev
     'HardwareRev.'    : '.1.3.6.1.2.1.16.19.3.0',
     }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 walk_PortIndex = {
 #    PortIndex           .1.3.6.1.4.1.171.11.113.1.2.2.2.1.1.1		swL2PortInfoPortIndex

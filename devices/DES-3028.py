@@ -43,6 +43,7 @@ Commands = ([
                 'get_PortIndex',
                 'walk_syslog',
                 'walk_vlan',
+                'get_deviceMac',
             ],)
 
 # swL2PortInfoMediumType
@@ -145,6 +146,12 @@ walk_syslog = {
 
 
 }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 walk_vlan = {
     # 'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3', # общая таблица

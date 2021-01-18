@@ -36,6 +36,8 @@ Commands = ([
     'get_PortIndex',
     'PortName',
     'walk_syslog',
+    'walk_vlan',
+    'get_deviceMac',
     ],)
 
 # ifType
@@ -135,6 +137,16 @@ walk_PortIndex = {
 #    PortIndex           .1.3.6.1.2.1.2.2.1.1				ifIndex
     'PortIndex'       : '.1.3.6.1.2.1.2.2.1.1',
     }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
+walk_vlan = {
+    'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3.1.4',
+
+}
 
 walk_syslog = {
     'rlSyslogGlobalEnable'          : '1.3.6.1.4.1.89.82.2.1',

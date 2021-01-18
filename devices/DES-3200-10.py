@@ -44,6 +44,7 @@ Commands = ([
 #    'get_ifAlias',
     'walk_syslog',
     'walk_vlan',
+    'get_deviceMac',
 
     ],)
 
@@ -143,6 +144,12 @@ walk_vlan = {
 
 
 }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.1', # 3 - enabled

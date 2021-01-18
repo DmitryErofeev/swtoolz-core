@@ -38,6 +38,7 @@ Commands = ([
     'walk_lldp',
     'walk_syslog',
     'walk_vlan',
+    'get_deviceMac',
     ],)
 
 # ifType
@@ -187,6 +188,13 @@ get_SinglePort = {
     'PortDescr.'      : '.1.3.6.1.2.1.31.1.1.1.18.%s',
     }
 
+
+# 1.3.6.1.2.1.17.1.1 MAC
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 walk_AllPorts = {
 #    MediumType          .1.3.6.1.2.1.2.2.1.3				ifType
     'MediumType'      : '.1.3.6.1.2.1.2.2.1.3',
@@ -210,7 +218,7 @@ walk_ifAlias = {
     }
 
 walk_vlan = {
-    'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3',
+    'VlanList' : '.1.3.6.1.2.1.17.7.1.4.3.1.4',
 
 }
 

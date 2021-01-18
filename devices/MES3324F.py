@@ -40,6 +40,7 @@ Commands = ([
                 'PortName',
                 'getFirmwareVer'
                 'walk_syslog',
+                'get_deviceMac',
             ],)
 
 # swIfTransceiverType
@@ -130,6 +131,11 @@ PortName = ({
 get_HardwareRev = {
     # HardwareRev   .1.3.6.1.4.1.89.2.11.1   genGroupHWVersion
     'HardwareRev': '.1.3.6.1.4.1.89.2.11.1'
+}
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
 }
 
 walk_PortIndex = {

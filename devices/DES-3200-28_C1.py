@@ -45,6 +45,7 @@ Commands = ([
                 'walk_lldp',
                 'walk_vlan',
                 'walk_syslog',
+                'get_deviceMac',
             ],)
 
 # swL2PortInfoMediumType
@@ -210,6 +211,12 @@ get_ifName = {
     'PortName.27': '.1.3.6.1.2.1.31.1.1.1.1.27',
     'PortName.28': '.1.3.6.1.2.1.31.1.1.1.1.28',
 }
+
+get_deviceMac = {
+    'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
+
+}
+
 
 get_SinglePort = {
     #    MediumType          .1.3.6.1.4.1.171.11.113.5.1.2.3.1.1.2		swL2PortInfoMediumType

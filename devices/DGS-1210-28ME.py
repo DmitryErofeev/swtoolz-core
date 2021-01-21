@@ -42,6 +42,7 @@ Commands = ([
                 'get_HardwareRev',
                 'walk_syslog',
                 'get_deviceMac',
+                'walk_lldp',
             ],)
 
 # sysPortCtrlMediumType .1.3.6.1.4.1.171.10.76.28.1.1.13.1.2
@@ -175,6 +176,11 @@ get_deviceMac = {
 
 }
 
+walk_lldp = {
+    'helper'    : 'mac_from_hexstring',
+#    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    }
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.1.0', # 3 - enabled

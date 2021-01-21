@@ -37,6 +37,7 @@ Commands = ([
     'PortName',
     'walk_syslog',
     'get_deviceMac',
+    'walk_lldp',
     ],)
 
 # ifType
@@ -141,6 +142,12 @@ get_deviceMac = {
     'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
 
 }
+
+walk_lldp = {
+    'helper'    : 'mac_from_hexstring',
+#    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    }
 
 walk_syslog = {
     'rlSyslogGlobalEnable'          : '1.3.6.1.4.1.89.82.2.1',

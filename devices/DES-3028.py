@@ -44,6 +44,7 @@ Commands = ([
                 'walk_syslog',
                 'walk_vlan',
                 'get_deviceMac',
+                'walk_lldp',
             ],)
 
 # swL2PortInfoMediumType
@@ -136,6 +137,12 @@ walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.11.63.6.2.2.1.1.1    swL2PortInfoPortIndex
     'PortIndex': '.1.3.6.1.4.1.171.11.63.6.2.2.1.1.1',
 }
+
+walk_lldp = {
+    'helper'    : 'mac_from_hexstring',
+#    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    }
 
 walk_syslog = {
     # 'syslog_table': '.1.3.6.1.4.1.171.12.12', # 3 - enabled

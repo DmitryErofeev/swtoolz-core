@@ -267,9 +267,10 @@ walk_ifAlias = {
 }
 
 walk_lldp = {
-    #    lldpNeibor           .1.0.8802.1.1.2.1.4.1			lldpRemTable
-    'hex_string:lldpNeibor': '.1.0.8802.1.1.2.1.4.1',
-}
+    'helper'    : 'mac_from_hexstring',
+#    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    }
 
 
 walk_vlan = {

@@ -472,6 +472,19 @@ def hex_ip(input_string):
     return '.'.join([str(int(_hex[n:n+2], 16)) for n in range(0,len(_hex),2)])
 
 
+def mac_from_hexstring(input_data, host):
+    # logging.info(f'mac_from_hexstring(): {host} {input_data}')
+    result = input_data.copy()
+
+    for keyl1, data in input_data.items():
+        for key, value in data.items():
+            if len(value) == 6:
+                converted_value = hex_string(value).lower()
+                result[keyl1][key] = converted_value
+                # logging.info(f'mac_from_hexstring(): {value} > {converted_value}')
+
+    return result
+
 
 def ljust_string(input_string):
     """

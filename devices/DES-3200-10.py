@@ -45,6 +45,7 @@ Commands = ([
     'walk_syslog',
     'walk_vlan',
     'get_deviceMac',
+    'walk_lldp',
 
     ],)
 
@@ -131,6 +132,12 @@ cdPairStatus = ({
 get_HardwareRev = {
 #    HardwareRev         .1.3.6.1.2.1.16.19.3.0				probeHardwareRev
     'HardwareRev.'    : '.1.3.6.1.2.1.16.19.3.0',
+    }
+
+walk_lldp = {
+    'helper'    : 'mac_from_hexstring',
+#    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
     }
 
 walk_PortIndex = {

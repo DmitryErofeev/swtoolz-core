@@ -32,6 +32,7 @@ Commands = ([
                 'walk_vlan',
                 'get_deviceMac',
                 'walk_lldp',
+                'get_firmware',
             ],)
 
 # swL2PortInfoMediumType
@@ -118,6 +119,11 @@ get_HardwareRev = {
     # HardwareRev    .1.3.6.1.2.1.16.19.3.0				probeHardwareRev
     'HardwareRev.': '.1.3.6.1.2.1.16.19.3.0',
 }
+
+get_firmware = {
+    'firmware_info'       : '.1.3.6.1.2.1.16.19.2',
+    }
+
 
 walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.11.116.1.2.2.1.1.1		swL2PortInfoPortIndex

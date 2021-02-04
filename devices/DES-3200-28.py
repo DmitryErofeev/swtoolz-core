@@ -49,6 +49,7 @@ Commands = ([
                 'walk_vlan',
                 'get_deviceMac',
                 'walk_lldp',
+                'get_probeConfig',
             ],)
 
 # swL2PortInfoMediumType
@@ -140,6 +141,11 @@ walk_PortIndex = {
     # PortIndex   .1.3.6.1.4.1.171.11.113.1.3.2.2.1.1.1		swL2PortInfoPortIndex
     'PortIndex': '.1.3.6.1.4.1.171.11.113.1.3.2.2.1.1.1',
 }
+
+get_probeConfig = {
+    'SoftwareRev':'.1.3.6.1.2.1.16.19.2',
+    'HardwareRev' : '.1.3.6.1.2.1.16.19.3',
+    }
 
 walk_syslog = {
     'syslog_state': '1.3.6.1.4.1.171.12.12.1', # 3 - enabled

@@ -46,6 +46,7 @@ Commands = ([
                 'walk_vlan',
                 'walk_syslog',
                 'get_deviceMac',
+                'get_probeConfig',
             ],)
 
 # swL2PortInfoMediumType
@@ -265,6 +266,11 @@ walk_ifAlias = {
     #    PortDescr           .1.3.6.1.2.1.31.1.1.1.18			ifAlias
     'PortDescr': '.1.3.6.1.2.1.31.1.1.1.18',
 }
+
+get_probeConfig = {
+    'SoftwareRev':'.1.3.6.1.2.1.16.19.2',
+    'HardwareRev' : '.1.3.6.1.2.1.16.19.3',
+    }
 
 walk_lldp = {
     'helper'    : 'mac_from_hexstring',

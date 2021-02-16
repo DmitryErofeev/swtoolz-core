@@ -269,8 +269,11 @@ walk_ifAlias = {
 walk_lldp = {
     'helper'    : 'mac_from_hexstring',
 #    ldpRemTable           .1.0.8802.1.1.2.1.4.1			ldpRemTable
-    'hex_string:ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
+    'ldpRemTable'       : '.1.0.8802.1.1.2.1.4.1',
     }
+
+
+
 
 
 walk_vlan = {

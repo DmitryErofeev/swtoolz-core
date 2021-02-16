@@ -132,7 +132,7 @@ def getSNMPIndexByPort(host, port):
     if host in helpers.gDynamicSNMPIndex and port in helpers.gDynamicSNMPIndex[host]['ports'].values():
         indx = list(helpers.gDynamicSNMPIndex[host]['ports'].keys())[list(helpers.gDynamicSNMPIndex[host]['ports'].values()).index(port)]
         return indx
-    else: 
+    else:
         return None
 
 def prepare_oid(params, dataset, model, ip):
@@ -274,7 +274,7 @@ def process_device(device_module, request_params, json_resp, target_ip, snmp_com
                 snmp_oids_list = [prepare_oid(request_param.copy(), dataset[paramname], model, target_ip) for paramname in dataset]
 
                 # выполняем SNMP-опрос
-                snmp_method = session.get if get_notwalk else session.walk
+                snmp_method = session.get_bulk if get_notwalk else session.bulkwalk
                 snmp_result = snmp_method(snmp_oids_list)
 
                 for var in snmp_result:

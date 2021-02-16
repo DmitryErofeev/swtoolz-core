@@ -482,6 +482,10 @@ def mac_from_hexstring(input_data, host):
                 converted_value = hex_string(value).lower()
                 result[keyl1][key] = converted_value
                 # logging.info(f'mac_from_hexstring(): {value} > {converted_value}')
+            elif len(value) == 17:
+                converted_value = value.replace('-','').lower()
+                result[keyl1][key] = converted_value
+                # logging.info(f'mac_from_hexstring(): {value} > {converted_value}')
 
     return result
 

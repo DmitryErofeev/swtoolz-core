@@ -6,6 +6,7 @@ models_by_desc = [
     {'DGS-3420-28SC': 'DGS-3420-28SC'},
     {'DGS-3120-48TC': 'DGS-3120-48TC'},
     {'DES-3200-28F/C1': 'DES-3200-28F_C1'},
+    {'DES-3200-28F': 'DES-3200-28F_C1'},
     {'DES-3010G': 'DES-3010G'},
     {'DES-1228/ME': 'DES-1228ME'},
     {'DES-1210-28/ME/B2': 'DES-1210-28ME_B2'},

@@ -303,3 +303,14 @@ set_SaveConfig = [
     # .1.3.6.1.4.1.171.12.1.2.18.4					agentBscFileSystemSaveCfg
     ['.1.3.6.1.4.1.171.12.1.2.18.4', '0', '2', 'INTEGER'],
 ]
+
+set_CfgUpload = [
+    #     .1.3.6.1.4.1.171.12.1.2.18.1.1.3					agentBscFileSystemServerAddr
+    ['.1.3.6.1.4.1.171.12.1.2.18.1.1.3', '3', '{1}', 'IPADDR'],
+    #     .1.3.6.1.4.1.171.12.1.2.18.1.1.5					agentBscFileSystemServerFileName
+    ['.1.3.6.1.4.1.171.12.1.2.18.1.1.5', '3', '{2}', 'OCTETSTR'],
+    #     .1.3.6.1.4.1.171.12.1.2.18.1.1.8					agentBscFileSystemLoadType
+    ['.1.3.6.1.4.1.171.12.1.2.18.1.1.8', '3', '2', 'INTEGER'],
+    #     .1.3.6.1.4.1.171.12.1.2.18.1.1.12					agentBscFileSystemCtrl
+    ['.1.3.6.1.4.1.171.12.1.2.18.1.1.12', '3', '3', 'INTEGER'],
+]

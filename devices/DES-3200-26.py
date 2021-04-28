@@ -106,6 +106,7 @@ BoardDescr = ({
                   '1': 'DES-3200-26',
               },)
 
+
 # swEtherCableDiagLinkStatus
 cdLinkStatus = ({
                     '0': 'linkdown',

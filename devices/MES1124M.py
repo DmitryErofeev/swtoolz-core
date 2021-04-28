@@ -39,6 +39,7 @@ Commands = ([
     'walk_syslog',
     'walk_vlan',
     'get_deviceMac',
+    'set_CfgUpload',
     ],)
 
 # ifType
@@ -94,7 +95,7 @@ AdminFlow = ({
 
 # UnitModuleName (placeholder)
 BoardDescr = ({
-    '1' : 'Eltex MES-2124',
+    '1' : 'MES1124M',
     },)
 
 # ifName (placeholder)
@@ -267,3 +268,15 @@ set_AdminStatus = [
 #     .1.3.6.1.2.1.2.2.1.7						ifAdminStatus
     ['.1.3.6.1.2.1.2.2.1.7.%s', '', '%s', 'INTEGER'],
     ]
+
+set_CfgUpload = [
+    ['.1.3.6.1.4.1.89.87.2.1.3', '1', '1', 'INTEGER'],
+    ['.1.3.6.1.4.1.89.87.2.1.7', '1', '2', 'INTEGER'],
+    ['.1.3.6.1.4.1.89.87.2.1.8', '1', '3', 'INTEGER'],
+    # FileAddr
+    ['.1.3.6.1.4.1.89.87.2.1.9', '1', '{1}', 'IPADDR'],
+    # File
+    ['.1.3.6.1.4.1.89.87.2.1.11', '1', '{2}', 'OCTETSTR'],
+    ['.1.3.6.1.4.1.89.87.2.1.17', '1', '4', 'INTEGER'],
+    ]
+

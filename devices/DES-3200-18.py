@@ -133,6 +133,10 @@ get_HardwareRev = {
     'HardwareRev.'    : '.1.3.6.1.2.1.16.19.3.0',
     }
 
+get_firmware = {
+    'firmware_info':'.1.3.6.1.2.1.16.19.2',
+    }
+
 get_deviceMac = {
     'hex_string:dot1dBaseBridgeAddress' : '1.3.6.1.2.1.17.1.1',
 

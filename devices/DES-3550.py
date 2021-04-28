@@ -109,7 +109,7 @@ PortType = ({
 
 # UnitModuleName (placeholder)
 BoardDescr = ({
-                  '1': 'DES-3526',
+                  '1': 'DES-3550',
               },)
 
 # get_HardwareRev (placeholder for Slava's Hardcode. not working but necessary)
@@ -478,4 +478,17 @@ set_IpifCfg = [
     ['.1.3.6.1.4.1.171.11.63.3.2.1.2.4', '0', '{3}', 'IPADDR'],
     # .1.3.6.1.4.1.171.11.63.3.2.1.2.5					swL2DevCtrlManagementVlanId
     ['.1.3.6.1.4.1.171.11.63.3.2.1.2.5', '0', '{4}', 'INTEGER'],
+]
+
+set_CfgUpload = [
+    # .1.3.6.1.4.1.171.12.1.2.1.1.3					agentBscSwFileAddr
+    ['.1.3.6.1.4.1.171.12.1.2.1.1.3', '3', '{1}', 'IPADDR'],
+    # .1.3.6.1.4.1.171.12.1.2.1.1.5					agentBscSwFile
+    ['.1.3.6.1.4.1.171.12.1.2.1.1.5', '3', '{2}', 'OCTETSTR'],
+    # .1.3.6.1.4.1.171.12.1.2.1.1.7					agentBscSwFileLoadType
+    ['.1.3.6.1.4.1.171.12.1.2.1.1.7', '3', '2', 'INTEGER'],
+    # .1.3.6.1.4.1.171.12.1.2.1.1.8					agentBscSwFileCtrl
+    ['.1.3.6.1.4.1.171.12.1.2.1.1.8', '3', '3', 'INTEGER'],
+    # .1.3.6.1.4.1.171.12.1.2.1.1.9					agentBscSwFileBIncrement
+    ['.1.3.6.1.4.1.171.12.1.2.1.1.9', '3', '1', 'INTEGER'],
 ]
